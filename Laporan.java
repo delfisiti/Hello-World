@@ -1,36 +1,23 @@
-class Laporan {
-	public String no_lap;
+import java.util.Scanner;
+import java.Buffer
+public class Laporan extends Login {
+
 	public String tgl_lap;
-	public String jenis_lap;
+	public String no_faktur;
+	public String no_lap;
 
+	public void cetak()	{
+	Scanner input = new Scanner(System.in);
+ 	System.out.print("==============================");
+	System.out.print(" Faktur Transaksi Anda ");
+ 	System.out.print(" No Faktur : "); no_faktur = input.nextLine();
 
+		Login log = new Login();
+		System.out.print("Nama Admin"+ input); 
 
-	public void cetak() {
-		this.no_lap = "9078KT";
-		this.tgl_lap = "23 November 2001";
-		this.jenis_lap = "keuangan";
-		System.out.println(no_lap);
-		System.out.println(tgl_lap);
-		System.out.println(jenis_lap);
-	}
+ 	
+}
 
-	public void ubah_lap() {
-		System.out.print("Silahkan Masukkan No Laporan yang akan di Ubah!!")
-		no_lap = input.nextLine();
-	}
+	
 
-	public void hapus_lap() {
-		System.out.print("Silahkan Masukkan No Laporan yang akan di Hapus!!")
-		no_lap = input.nextLine();
-	}
-
-	public void buat_lap() {
-		this.no_lap = input.nextLine();
-
-	}
-
-	public boolean apakahHabis() {
-
-		return true;
-	}
 }

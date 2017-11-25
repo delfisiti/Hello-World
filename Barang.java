@@ -1,45 +1,31 @@
-class Barang {
-	public String kode_barang;
+import java.util.Scanner;
+public class Barang extends Login {
+
 	public String nama_barang;
+	public String kode_barang;
 	public String harga_barang;
-	public String jumlah;
-	public String supplier;
+	public String total_barang;
+	public String jumlah_harga;
 
+	public void susunbarang(){
+		Login log = new Login();
+		log.inputlogin();
+	Scanner input = new Scanner(System.in);
 
+ 
+ 	System.out.print(" Kode barang : "); kode_barang = input.nextLine();
+}
 
-	public void tambah() {
-		System.out.print("Masukkan Kode Barang  	: ");
-		kode_barang = input.nextLine();
-		System.out.print("Masukkan Kama Barang  	: ");
-		nama_barang = input.nextLine();
-		System.out.print("Masukkan Harga Barang  	: ");
-		harga_barang = input.nextLine();
-		System.out.print("Jumlah  	: ");
-		jumlah = input.nextLine();
-		System.out.print("Masukkan Supplier  	: ");
-		supplier = input.nextLine();
+	public void totalbarang(){
+	Scanner input = new Scanner(System.in); 
+	System.out.print(" Harga Barang : "); int hb = input.nextInt();
+ 	System.out.print(" Total barang : "); int tb = input.nextInt();
+ 	System.out.print(" Total Harga : "+(hb*tb));
+ 	System.out.println(" ");
 
-	}
+}
 
-	public void ubah() {
-		System.out.print("Silahkan Masukkan Kode Barang yang akan di Ubah!!")
-		kode_barang = input.nextLine();
-	}
+	
+	
 
-	public void hapus() {
-		System.out.print("Silahkan Masukkan Kode Barang yang akan di Hapus!!")
-		kode_barang = input.nextLine();
-
-	}
-
-	public void return() {
-		System.out.print("Silahkan Masukkan Kode Barang yang akan di Return!!")
-		kode_barang = input.nextLine();
-
-	}
-
-	public boolean apakahHabis() {
-
-		return true;
-	}
 }
